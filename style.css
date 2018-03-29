@@ -42,12 +42,21 @@ ol, ul {
 	padding:6px;*/
 }
 
-.page-node #content-wrap .caption img {
+.caption img {
 	display:block;
  }
 .caption p {
 	margin-top:-6px;
 	margin-bottom:1.5em;
+}
+.file-icon p {
+  display: none;
+}
+#content-wrap img.file-icon, #content-wrap .file-icon img {
+  display: inline;
+  border: 0;
+  margin: 5px 3px 0 0;
+  padding: 0;
 }
 
 /* tables still need 'cellspacing="0"' in the markup */
@@ -677,7 +686,7 @@ h2 a:hover {
   margin: 0.5em 1em 0 0;
   float: left;
 }
-.page-node #content-wrap img {
+#content-wrap img {
   border: 1px solid #CCCCCC;
   padding: 6px;
   height: auto;
@@ -774,6 +783,12 @@ h2 a:hover {
 
 /* =Footer
 ----------------------------------------------- */
+.content {
+  overflow: hidden;
+}
+footer {
+  margin: 2em 0 0 0;
+}
 
 #footer-bottom {
   clear: both;
@@ -1668,7 +1683,7 @@ article footer {
 }
 #content .field-name-field-datei img {
   border:0;
-  margin: 0;
+  margin: 5px 3px 0 0;
   padding: 0;
 }
 
@@ -1692,7 +1707,7 @@ body.cke_editable {
 .issues-link, .feed-icon {
   display:none;
 }
-#socialshareprivacy-block .social_share_privacy_area .twitter, #socialshareprivacy-block .social_share_privacy_area .gplus {
+/*#socialshareprivacy-block .social_share_privacy_area .twitter, #socialshareprivacy-block .social_share_privacy_area .gplus {
   width:170px;
 }
 #wrapper .social_share_privacy_area img {
@@ -1704,8 +1719,33 @@ body.cke_editable {
 
 .social_share_privacy_area li.settings_info .settings_info_menu {
 	z-index:100 !important;
+}*/
+
+.block-shariff {
+  margin: 2em 0;
 }
 
+iframe, iframe.media-youtube-player {
+    max-width: 100%;
+    height: auto;
+}
+.media-youtube-video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.media-youtube-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
 
 /* =Responsive Structure
 ----------------------------------------------- */
