@@ -85,4 +85,7 @@ jQuery(function(){
     jQuery('#main-menu > ul.menu').tinyNav({
         active: 'selected', // Set the "active" class
     });
+    // Nivo-Slider responsiveness
+    jQuery('#block-views-featured-slideshow-block').css('max-width', '100%');
 });
+
